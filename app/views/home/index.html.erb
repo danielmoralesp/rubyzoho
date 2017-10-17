@@ -53,3 +53,13 @@
     </div><!-- /.container-fluid -->
   </nav>
 </div>
+
+<div class="row">
+  <% @leads.each do |account| %>
+  	<div class="col-sm-6 col-md-3">
+  		<div class="job-item">
+        <%= pp account.account_name %>
+  		</div>
+  	</div>
+  <% end %>
+</div><!-- /.row -->
